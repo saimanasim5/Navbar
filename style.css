@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+.container{
+	background:black ;
+	width: 100vw;
+	height: 100vh;
+}
+
+
+.navigation_bar{
+	background: white;
+	width: 100vw;
+	height: 70px;
+	line-height: 70px;
+}
+
+
+.logobar{
+	float: left;
+}
+
+
+.logobar img{
+	height:75px;
+	padding-left: 50px;
+	cursor: pointer;
+}
+
+
+.menubar{
+	float: right;
+}
+
+
+.menubar ul{
+	margin-right: 50px;
+}
+
+
+.menubar li {
+	display: inline-block;
+	padding-right: 35px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+.menubar li a{
+	color: black;
+}
+
+
+.menubar li a:hover{
+	color: #2196f3;
+}
+
+
+.clearfix{
+	clear: both;
+}
+
+
+.toggle_bar{
+	float: right;
+	padding-right: 40px;
+	display: none;
+	font-size: 30px;
+    color:black;
+	line-height: 70px;
+	cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+	.toggle_bar{
+		display: block;
+	}
+    .menubar ul{
+		position: fixed;
+		width: 100%;
+		height: 65vh;
+		background:#cdcdcded;
+		top: 70px;
+		left: 0;
+		text-align: center;
+		display: none;
+	}
+    .menubar ul li{
+		display: block;
+		margin: 40px 0;
+		line-height: 30px;
+	}
+    .logobar img{
+		padding-left: 15px;
+	}
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+	.logobar img{
+		padding-left: 15px;
+	}
+}
